@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>ChildCareHQ3</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>Adminlogin</servlet-name>
+		<servlet-class>ConnectionFiles.AdminLogIn</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Adminlogin</servlet-name>
+		<url-pattern>/admlogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Adminsignup</servlet-name>
+		<servlet-class>ConnectionFiles.AdminSignUp</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Adminsignup</servlet-name>
+		<url-pattern>/admsignup</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Docsignup</servlet-name>
+		<servlet-class>ConnectionFiles.DocSignUp</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Docsignup</servlet-name>
+		<url-pattern>/docsignup</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Patsignup</servlet-name>
+		<servlet-class>ConnectionFiles.PatientSignUp</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Patsignup</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Patlogin</servlet-name>
+		<servlet-class>ConnectionFiles.PatientLogIn</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Patlogin</servlet-name>
+		<url-pattern>/patientlogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Doclogin</servlet-name>
+		<servlet-class>ConnectionFiles.DocLogIn</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Doclogin</servlet-name>
+		<url-pattern>/doclogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>ConnectionFiles.PatientForgotPassword</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/pfp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminForgotPassword</servlet-name>
+		<servlet-class>ConnectionFiles.AdminForgotPassword</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminForgotPassword</servlet-name>
+		<url-pattern>/afp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Book</servlet-name>
+		<servlet-class>ConnectionFiles.BookAppointment</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Book</servlet-name>
+		<url-pattern>/bookapp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mjpjay</servlet-name>
+		<servlet-class>ConnectionFiles.MJPJAY</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Mjpjay</servlet-name>
+		<url-pattern>/yoj</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>
+
